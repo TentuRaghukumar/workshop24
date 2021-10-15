@@ -1,0 +1,41 @@
+<div class="container col-md-3">
+    <h1 class="text-primary text-center rounded-6">User Registration</h1>
+    <form [formGroup]="signupForm" #signupform="ngForm" (ngSubmit)="signup()">
+
+        <!--Name Field--->
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" required formControlName="name" class="form-control" placeholder="Restaurent Name"
+                id="exampleInputname" aria-describedby="emailHelp">
+            <div class="text-danger" *ngIf="name && name.invalid && (name.dirty || name.touched)">*Name field
+                is required</div>
+        </div>
+         <!--Email Field--->
+        <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" required formControlName="email" class="form-control" placeholder="Email Address"
+                id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div class="text-danger" *ngIf="email && email.invalid && (email.dirty || email.touched)">*Email is
+                invalid</div>
+        </div>
+         <!--Mobile Number  Field--->
+        <div class="mb-3">
+            <label class="form-label">Mobile_no</label>
+            <input type="text" required formControlName="mobile_no" class="form-control"
+                placeholder="Enter Your Mobile NUmber" id="exampleInputmobile_no">
+            <div class="text-danger" *ngIf="mobile_no && mobile_no.invalid && (mobile_no.dirty || mobile_no.touched)">
+                *mobile_no More Than 10 Digits </div>
+        </div>
+         <!--Password Field--->
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" required placeholder="Set Your password" formControlName="password"
+                class="form-control" id="exampleinputaddress">
+            <div class="text-danger" *ngIf="password && password.invalid && (password.dirty || password.touched)">
+                *Password must be atleast 8 character</div>
+        </div>
+        
+        <button [disabled]="signupform.invalid" class="btn btn-success">Submit</button>
+        <p>Already Had An Account<a href="/login">Click Here</a>To Login</p>
+    </form>
+</div>

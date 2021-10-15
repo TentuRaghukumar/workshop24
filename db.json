@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "id": 4,
+      "name": "Raghukumar Tentu",
+      "email": "ram@gmail.com",
+      "mobile_no": "9392459395",
+      "address": "balaji boys hostel",
+      "services": "chai,biscuits",
+      "available": "hfygh"
+    }
+  ],
+  "signup": [
+    {
+      "name": "cfv",
+      "email": "bmjhfg",
+      "mobile_no": "hbn",
+      "password": "vbnjm",
+      "id": 1
+    },
+    {
+      "name": "raghukumar",
+      "email": "rk@gmail.com",
+      "mobile_no": "9874563210",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "dav",
+      "email": "dev@m.com",
+      "mobile_no": "987564231",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "gnhmn",
+      "email": "mjghh",
+      "mobile_no": "jmg",
+      "password": "",
+      "id": 4
+    },
+    {
+      "name": "gvhbnl",
+      "email": "kv",
+      "mobile_no": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "name": "raghukumar",
+      "email": "ram@gmail.com",
+      "mobile_no": "9876543210",
+      "password": "12345678",
+      "id": 6
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "Rk"
+  }
+}
